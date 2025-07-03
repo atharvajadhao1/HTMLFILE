@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Light Control</title>
+  <style>
+    body {
+      text-align: center;
+      padding: 20px;
+    }
+    #lightBtn {
+      padding: 10px 20px;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <h2>Click to Change Background Color</h2>
+  <button id="lightBtn">Toggle Light</button>
+
+  <script>
+    let colors = ["white", "red", "green", "blue", "yellow"];
+    let index = 0;
+    document.getElementById("lightBtn").onclick = function() {
+      index = (index + 1) % colors.length;
+      document.body.style.backgroundColor = colors[index];
+    };
+  </script>
+
+  <br><br>
+  <a href="index.html">Back to Home</a>
+</body>
+</html>

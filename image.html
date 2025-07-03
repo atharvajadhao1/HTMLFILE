@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Image Zoom</title>
+  <style>
+    #myImage {
+      width: 200px;
+      transition: transform 0.3s;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h2>Click the Image to Zoom</h2>
+  <img src="gratisography-augmented-reality-800x525.jpg" id="myImage" onclick="zoom()" />
+
+
+  <script>
+    let zoomed = false;
+    function zoom() {
+      const img = document.getElementById("myImage");
+      zoomed = !zoomed;
+      img.style.transform = zoomed ? "scale(1.5)" : "scale(1)";
+    }
+  </script>
+
+  <br><br>
+  <a href="index.html">Back to Home</a>
+</body>
+</html>

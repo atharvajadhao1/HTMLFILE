@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Square Calculator</title>
+</head>
+<body>
+  <h2>Enter a Number to Get Square</h2>
+  <input type="number" id="num" />
+  <button onclick="calculate()">Find Square</button>
+  <p id="result"></p>
+
+  <script>
+    function calculate() {
+      const n = document.getElementById("num").value;
+      document.getElementById("result").innerText = "Square = " + (n * n);
+    }
+  </script>
+
+  <a href="index.html">Back to Home</a>
+</body>
+</html>
